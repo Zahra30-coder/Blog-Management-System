@@ -1,0 +1,27 @@
+<div style="height: 75px;"></div>
+<h1 style=" text-align: center;"> Blog Management System</h1>
+<div style="height: 35px;"></div>
+<div class="container mt-5">
+  <table class="table ">
+    <thead class="table-dark">
+      <tr style="font-size: 32px; text-align: center;">
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody style="font-size: 32px; text-align: center; margin: 30px;">
+      <tr *ngFor="let blog of allBlogs;let i=index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{blog.title }}</td>
+        <td>{{blog.body}}</td>
+        <td>
+          <a [routerLink]="['editBlog',blog.id]" class="btn btn-primary"  ><i class="bi bi-pen-fill"></i></a>
+          <button class="btn btn-danger ms-2" (click)="deleteBlog(blog.id)" ><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

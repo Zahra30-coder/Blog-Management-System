@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Reading",
+      "body": "Complete Reading Atomic Habits"
+    },
+    {
+      "title": "Assignment",
+      "body": "Finish Doing Maths2  Assignment",
+      "id": "2"
+    }
+  ]
+}
